@@ -17,3 +17,26 @@ function turnOnAndOff() {
 }
 
 button.addEventListener("click", turnOnAndOff);
+
+/////// second way//////
+
+// let button = document.querySelector("button");
+// let flag = 0;
+// let imgOff = document.createElement("img");
+// imgOff.setAttribute("src", "offLamp.png");
+// imgOff.setAttribute("height", "100px");
+// document.body.append(imgOff);
+// function turnOnOff() {
+//   if (flag) {
+//     imgOff.setAttribute("src", "offLamp.png");
+//     imgOff.setAttribute("height", "100px");
+//     button.innerHTML = "Turn On";
+//     flag = 0;
+//   } else {
+//     imgOff.setAttribute("src", "onLamp.png");
+//     imgOff.setAttribute("height", "100px");
+//     button.innerHTML = "Turn Off";
+//     flag = 1;
+//   }
+// }
+// button.addEventListener("click", turnOnOff);
