@@ -61,7 +61,6 @@ function selectCountry() {
     citySelect.innerHTML = "";
     cityOption.innerHTML = "Plesae Select a country first";
     citySelect.append(cityOption);
-    console.log(citySelect);
   }
 }
 
