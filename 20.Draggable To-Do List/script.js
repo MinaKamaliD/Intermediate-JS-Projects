@@ -7,7 +7,6 @@ let todoBox = document.querySelector(".status");
 
 function modalAppears() {
   modal.style.top = "50%";
-  //   console.log("first");
 }
 
 function modalDisappears() {
@@ -28,10 +27,12 @@ function todoIsSubmitted() {
     todoDiv.id = "todoElem";
     todoDiv.draggable = true;
     todoDiv.innerHTML = todoInput.value;
+    todoDiv.addEventListener("dragstart", dragHandler);
 
     todoDiv.append(closeSpan);
     todoBox.append(todoDiv);
     todoInput.value = "";
+    modal.style.top = "-50%";
   }
 }
 
@@ -39,6 +40,18 @@ function todoSubmittedEnter(event) {
   if (event.key === "Enter") {
     todoIsSubmitted();
   }
+}
+
+function dragHandler(event) {
+  event.dataTransfer.setData("elementId", event.target.id);
+}
+
+function dropHandler(event) {
+  let data = event.dataTransfer.getData("elementId");
+  event.target.append(document.getElementById(data));
+}
+function dragOverandler(event) {
+  event.preventDefault();
 }
 
 addBtn.addEventListener("click", modalAppears);
