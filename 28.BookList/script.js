@@ -9,18 +9,26 @@ let bookArray = [];
 function addBook(event) {
   event.preventDefault();
 
-  let newBookObject = {
-    id: bookArray.length + 1,
-    title: titleInput.value,
-    author: authorInput.value,
-    year: yearInput.value,
-  };
+  if (
+    titleInput.value === "" ||
+    authorInput.value === "" ||
+    yearInput.value === ""
+  ) {
+    alert("Please insert all the inputs.");
+  } else {
+    let newBookObject = {
+      id: bookArray.length + 1,
+      title: titleInput.value,
+      author: authorInput.value,
+      year: yearInput.value,
+    };
 
-  bookArray.push(newBookObject);
+    bookArray.push(newBookObject);
 
-  setIntoLocalStorage(bookArray);
-  booksGenerator(bookArray);
-  makeInputsEmpty();
+    setIntoLocalStorage(bookArray);
+    booksGenerator(bookArray);
+    makeInputsEmpty();
+  }
 }
 
 function setIntoLocalStorage(allBooksArray) {
@@ -49,9 +57,18 @@ function booksGenerator(allBooksArray) {
 
     bookTr.append(titleTh, authorTh, yearTh);
     bookContainer.append(bookTr);
-
-    console.log(bookContainer);
   });
 }
+
+function getBooksFromLocalStorage() {
+  let localStorageBooks = localStorage.getItem("books");
+
+  if (localStorageBooks) {
+    bookArray = JSON.parse(localStorageBooks);
+    booksGenerator(bookArray);
+  }
+}
+
+window.addEventListener("load", getBooksFromLocalStorage);
 
 btn.addEventListener("click", addBook);
