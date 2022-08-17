@@ -2,7 +2,8 @@ let titleInput = document.getElementById("title");
 let authorInput = document.getElementById("author");
 let yearInput = document.getElementById("year");
 let btn = document.querySelector(".btn");
-let bookContainer = document.querySelector(".table");
+let bookContainer = document.querySelector("#book-list");
+
 let bookArray = [];
 
 function addBook(event) {
@@ -18,6 +19,7 @@ function addBook(event) {
   bookArray.push(newBookObject);
 
   setIntoLocalStorage(bookArray);
+  booksGenerator(bookArray);
   makeInputsEmpty();
 }
 
@@ -29,6 +31,27 @@ function makeInputsEmpty() {
   titleInput.value = "";
   authorInput.value = "";
   yearInput.value = "";
+}
+
+function booksGenerator(allBooksArray) {
+  bookContainer.innerHTML = "";
+  allBooksArray.forEach(function (book) {
+    let titleTh = document.createElement("th");
+    titleTh.innerHTML = book.title;
+
+    let authorTh = document.createElement("th");
+    authorTh.innerHTML = book.author;
+
+    let yearTh = document.createElement("th");
+    yearTh.innerHTML = book.year;
+
+    let bookTr = document.createElement("tr");
+
+    bookTr.append(titleTh, authorTh, yearTh);
+    bookContainer.append(bookTr);
+
+    console.log(bookContainer);
+  });
 }
 
 btn.addEventListener("click", addBook);
