@@ -76,12 +76,15 @@ function pageButttonGenerator(page, allUsersArray) {
 
   button.addEventListener("click", function () {
     currentPage = page;
+
     displayUsersList(allUsersArray, usersList, rowsNumber, currentPage);
+
     let prevPage = document.querySelector(".active");
     prevPage.classList.remove("active");
     button.classList.add("active");
   });
   return button;
 }
+
 displayUsersList(itemsList, usersList, rowsNumber, currentPage);
 setupPagination(itemsList, pageNumbers, rowsNumber);
