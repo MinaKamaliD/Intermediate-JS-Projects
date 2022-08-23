@@ -9,6 +9,7 @@ let allProducts = [
 
 let shopItemsContainer = document.querySelector(".shop-items");
 let basketProductsContainer = document.querySelector(".cart-items");
+let purchaseBtn = document.querySelector(".btn");
 let userBasket = [];
 
 allProducts.forEach(function (product) {
@@ -97,6 +98,9 @@ function basketProductGenerator(userBasketArray) {
     let basketProductRemoveBtn = document.createElement("button");
     basketProductRemoveBtn.className = "btn btn-danger";
     basketProductRemoveBtn.innerHTML = "REMOVE";
+    basketProductRemoveBtn.addEventListener("click", function () {
+      removeProductFromBasket(product.id);
+    });
 
     basketProductsInputsContainer.append(
       basketProductInput,
@@ -109,7 +113,18 @@ function basketProductGenerator(userBasketArray) {
       basketProductsInputsContainer
     );
     basketProductsContainer.append(basketProductContainer);
-
-    console.log(basketProductContainer);
+    console.log(basketProductsContainer);
   });
 }
+function removeProductFromBasket(productId) {
+  userBasket = userBasket.filter(function (product) {
+    return product.id !== productId;
+  });
+  basketProductGenerator(userBasket);
+  console.log(userBasket);
+}
+
+purchaseBtn.addEventListener("click", function () {
+  userBasket = [];
+  basketProductGenerator(userBasket);
+});
