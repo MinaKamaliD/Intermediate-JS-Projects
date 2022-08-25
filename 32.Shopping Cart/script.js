@@ -118,6 +118,7 @@ function basketProductGenerator(userBasketArray) {
     basketProductRemoveBtn.innerHTML = "REMOVE";
     basketProductRemoveBtn.addEventListener("click", function () {
       removeProductFromBasket(product.id);
+      calculateTotalPrice(userBasket);
     });
 
     basketProductsInputsContainer.append(
@@ -145,6 +146,7 @@ function removeProductFromBasket(productId) {
 purchaseBtn.addEventListener("click", function () {
   userBasket = [];
   basketProductGenerator(userBasket);
+  calculateTotalPrice(userBasket);
 });
 
 function calculateTotalPrice(userBasketArray) {

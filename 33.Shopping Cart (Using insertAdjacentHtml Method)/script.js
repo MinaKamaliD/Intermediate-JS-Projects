@@ -95,6 +95,7 @@ function basketProductGenerator(userBasketArray) {
     basketProductRemoveBtn.innerHTML = "REMOVE";
     basketProductRemoveBtn.addEventListener("click", function () {
       removeProductFromBasket(product.id);
+      calculateTotalPrice(userBasket);
     });
 
     basketProductsInputsContainer.append(
