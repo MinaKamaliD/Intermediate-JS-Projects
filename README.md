@@ -8,8 +8,8 @@
 |  #  |            Project             | Live Demo |
 | :-: | :----------------------------: | :-------: |
 | 01  |       [Turning a lamp on and off](https://github.com/MinaKamaliD/Intermediate-JS-Projects/tree/master/01.Turning%20a%20lamp%20on%20and%20off)       | [Live Demo](https://minakamalid.github.io/Intermediate-JS-Projects/01.Turning%20a%20lamp%20on%20and%20off/)  |
-| 02  |     [Form Validation](https://github.com/MinaKamaliD/Intermediate-JS-Projects/tree/master/02.Form%20Validation)    | [Live Demo](https://minakamalid.github.io/Intermediate-JS-Projects/02.Form Validation)  |
-| 03  |    [Form Validation Keyboard](https://github.com/MinaKamaliD/Intermediate-JS-Projects/tree/master/03.Form%20Validation%20Keyboard)     | [Live Demo](https://minakamalid.github.io/Intermediate-JS-Projects/)  |
+| 02  |     [Form Validation](https://github.com/MinaKamaliD/Intermediate-JS-Projects/tree/master/02.Form%20Validation)    | [Live Demo](https://minakamalid.github.io/Intermediate-JS-Projects/02.Form%20Validation/)  |
+| 03  |    [Form Validation Keyboard](https://github.com/MinaKamaliD/Intermediate-JS-Projects/tree/master/03.Form%20Validation%20Keyboard)     | [Live Demo](https://minakamalid.github.io/Intermediate-JS-Projects/03.FormValidationKeyboard/)  |
 | 04  |  [Form Validation (Blur)](https://github.com/MinaKamaliD/Intermediate-JS-Projects/tree/master/04.Form%20Validation%20(Blur))  | [Live Demo](https://minakamalid.github.io/Intermediate-JS-Projects/)  |
 | 05  | [Random Background Color](https://github.com/MinaKamaliD/Intermediate-JS-Projects/tree/master/05.Random%20Background%20Color)  | [Live Demo](https://minakamalid.github.io/Intermediate-JS-Projects/)  |
 | 06  |    [Booking a Ticket](https://github.com/MinaKamaliD/Intermediate-JS-Projects/tree/master/06.Booking%20a%20Ticket)    | [Live Demo](https://minakamalid.github.io/Intermediate-JS-Projects/)  |
