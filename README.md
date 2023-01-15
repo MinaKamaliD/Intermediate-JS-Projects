@@ -7,7 +7,7 @@
 
 |  #  |            Project             | Live Demo |
 | :-: | :----------------------------: | :-------: |
-| 01  |       [Turning a lamp on and off](https://github.com/bradtraversy/vanillawebprojects/tree/master/form-validator)       | [Live Demo](https://vanillawebprojects.com/projects/form-validator/)  |
+| 01  |       [Turning a lamp on and off](https://github.com/MinaKamaliD/Intermediate-JS-Projects/tree/master/01.Turning%20a%20lamp%20on%20and%20off)       | [Live Demo](https://vanillawebprojects.com/projects/form-validator/)  |
 | 02  |     [Form Validation](https://github.com/bradtraversy/vanillawebprojects/tree/master/movie-seat-booking)    | [Live Demo](https://vanillawebprojects.com/projects/movie-seat-booking/)  |
 | 03  |    [Form Validation Keyboard](https://github.com/bradtraversy/vanillawebprojects/tree/master/custom-video-player)     | [Live Demo](https://vanillawebprojects.com/projects/custom-video-player/)  |
 | 04  |  [Form Validation (Blur)](https://github.com/bradtraversy/vanillawebprojects/tree/master/exchange-rate)  | [Live Demo](https://vanillawebprojects.com/projects/exchange-rate/)  |
