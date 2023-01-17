@@ -27,5 +27,6 @@
 | 18  |     [Debugging a Music Player](https://github.com/MinaKamaliD/Intermediate-JS-Projects/tree/master/18.Debugging%20a%20Music%20Player)   | [Live Demo](https://minakamalid.github.io/Intermediate-JS-Projects/18.Debugging%20a%20Music%20Player/)  |
 | 19  |       [Music List](https://github.com/MinaKamaliD/Intermediate-JS-Projects/tree/master/19.Music%20List)       | [Live Demo](https://minakamalid.github.io/Intermediate-JS-Projects/19.Music%20List/)  |
 | 20  | [Draggable To-Do List](https://github.com/MinaKamaliD/Intermediate-JS-Projects/tree/master/20.Draggable%20To-Do%20List) | [Live Demo](https://minakamalid.github.io/Intermediate-JS-Projects/20.Draggable%20To-Do%20List/)  |
+| 21  | [21.Changing-a-Website's-Theme](https://github.com/MinaKamaliD/Intermediate-JS-Projects/tree/master/21.Changing-a-Website's-Theme) | [Live Demo](https://minakamalid.github.io/Intermediate-JS-Projects/21.Changing-a-Website's-Theme/)  |
 
 
